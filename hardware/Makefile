@@ -2,8 +2,8 @@ KIBOT?=kibot
 DEBUG?=
 OUT_DIR=Generated
 EXTRA_OPS=--banner -1 --log $(OUT_DIR)/kibot.log $(DEBUG)
-PRJ_SCH=BREAD_Slice.kicad_sch
-PRJ_PCB=BREAD_Slice.kicad_pcb
+PRJ_SCH=can-nano-shield.kicad_sch
+PRJ_PCB=can-nano-shield.kicad_pcb
 
 .PHONY: erc drc sch_fab pcb_fab erc_and_fab drc_and_fab
 
