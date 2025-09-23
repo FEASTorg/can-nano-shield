@@ -1,0 +1,38 @@
+# Details
+
+- Description: A compact CAN transceiver/controller shield for Arduino Nano form factor, enabling reliable CAN bus communication using A4/A5 for CAN_H/L.
+- Features:
+  - Drop-in Nano shield format with pass-through headers
+  - Uses SMT-XH???? connector off the front edge or selectable to A4/A5 pins for CAN_H and CAN_L?????
+  - Onboard MCP2515 CAN controller (SPI)
+  - TJA1051/3 high-speed CAN transceiver
+  - Optional 120Ω termination via jumper (SPLIT TERMINATION CONCEPT!!!!!)
+  - Optional common-mode choke for EMC
+  - TVS diode protection on CAN lines
+- Specifications:
+  - 3.3V or 5V logic compatible (level shifted) VERIFY???? for ATM???
+  - CAN 2.0B compliant, up to 1 Mbps
+  - Standard 3-pin CAN output: CAN_H, GND, CAN_L
+- MCU(s):
+  - Compatible with any Arduino Nano-format MCU (e.g., ATmega328P, STM32F103, RP2040)
+- Key Components:
+  - MCP2515 CAN controller
+  - TJA1051 or TJA1053 CAN transceiver
+  - PESD2CAN TVS diode
+  - Optional: Epcos B82799C0104 common-mode choke
+- Template Stackup:
+  - 2-layer PCB, 1.6 mm FR4, standard 1oz copper CHECKKKKKKKQ!!!!!
+- Cost Estimate:
+  - TBD
+- Part Count:
+  - TBD
+- Hardware Complexity:
+  - Low (simple mixed-signal I/O, minimal passive filtering)
+- Firmware Complexity:
+  - Low (standard MCP2515 CAN libraries)
+- Design Status:
+  - Prototype revision complete
+- Test Status:
+  - Pending full functional and bus integrity testing
+- Notes:
+  - I²C is unavailable on A4/A5; consider alternate breakout if needed (ADD THIS?!?!??!)
